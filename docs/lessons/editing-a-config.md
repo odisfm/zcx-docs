@@ -1,3 +1,4 @@
+# editing a config
 
 Alright, time to actually get started!
 

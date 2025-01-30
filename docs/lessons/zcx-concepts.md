@@ -1,3 +1,4 @@
+# zcx concepts
 
 zcx uses a lot of jargon. Here is a quick guide to the most important concepts.
 
