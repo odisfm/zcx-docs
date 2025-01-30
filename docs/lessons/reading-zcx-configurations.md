@@ -107,4 +107,4 @@ Yaml files are plain old text, which means you can read and edit them with any t
 
 ___
 
-[Back to tutorial chapter](getting_started.md)
+[Back to tutorial chapter](/docs/tutorials/getting-started.md)

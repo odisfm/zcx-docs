@@ -302,4 +302,4 @@ Well done! You now understand the basics of configuring zcx! Feel free to experi
 
 ___
 
-[Back to tutorial chapter](/docs/tutorials/getting_started.md)
+[Back to tutorial chapter](/docs/tutorials/getting-started.md)
