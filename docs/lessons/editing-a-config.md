@@ -244,7 +244,7 @@ Let's take a look at the `actions_top_left` section. Its config file is `_config
 
 This section was defined as a 4x4 quarter of the 8x8 pad matrix. This means it has 4 rows of controls, with 4 columns per row, for 16 controls total. This config file is pre-filled with a skeleton definition for each control, as well as helpful `#comments` indicating which control is which. 
 
-The data structure you're looking at is called a [list](/docs/lessons/reading_zcx_configurations#lists). When you see a `-` that begins the line, that is the start of a new item (control) that belongs to this list.
+The data structure you're looking at is called a [list](/docs/lessons/reading-zcx-configurations.md#lists). When you see a `-` that begins the line, that is the start of a new item (control) that belongs to this list.
 ```yaml
 # row 1
 # col 1
@@ -261,7 +261,7 @@ The data structure you're looking at is called a [list](/docs/lessons/reading_zc
 
 If you like, you can start each list item with an empty line. You may find this easier to read.
 
-And from here, editing controls is pretty much exactly the same as what we did for the [named controls](#named%20controls). 
+And from here, editing controls is pretty much exactly the same as what we did for the [named controls](#named-controls). 
 
 Most pad matrices have RGB feedback, so we can can set them to display many different colors:
 
@@ -277,7 +277,7 @@ Now scroll through all three pages of the matrix. You'll see that **two** pages 
 
 ### pro tip: quotes and strings
 
-The [strings](/docs/lessons/reading-zcx-configurations#strings) we've used so far have been free of 'single quotes' and "double quotes". ClyphX uses double quotes quite a bit, and this can cause a small problem with yaml:
+The [strings](/docs/lessons/reading-zcx-configurations.md#strings) we've used so far have been free of 'single quotes' and "double quotes". ClyphX uses double quotes quite a bit, and this can cause a small problem with yaml:
 
 ```yaml
 gestures:
@@ -301,4 +301,4 @@ Well done! You now understand the basics of configuring zcx! Feel free to experi
 
 ___
 
-[Back to tutorial chapter](getting_started.md)
+[Back to tutorial chapter](/docs/tutorials/getting_started.md)
