@@ -135,7 +135,7 @@ mute:
 		pressed_delayed: ALL / MUTE
 ```
 
-We've changed the [key](/docs/lessons/reading-zcx-configurations#keys-and-values) `pressed` to `released_immediately`. zcx supports six gestures, five of which you'll be familiar with if you've used G-Controls:
+We've changed the [key](/docs/lessons/reading-zcx-configurations.md#keys-and-values) `pressed` to `released_immediately`. zcx supports six gestures, five of which you'll be familiar with if you've used G-Controls:
 
 ```
 zcx_gestures:
