@@ -3,7 +3,7 @@ zcx uses a lot of jargon. Here is a quick guide to the most important concepts.
 
 # ZControls
 
-Roughly equivalent to a G or X control from ClyphX Pro (first party controls). Original, I know. You define ZControls in your configuration file and when you press them they trigger action lists. Like with first party controls, you can configure the control's color. However, ZControls can have many additional properties that give you more control(!) over how they behave. There are even special subclasses of controls that offer specific functionality. More on that [later](#control%20classes).
+Roughly equivalent to a G or X control from ClyphX Pro (first party controls). Original, I know. You define ZControls in your configuration file and when you press them they trigger action lists. Like with first party controls, you can configure the control's color. However, ZControls can have many additional properties that give you more control(!) over how they behave. There are even special subclasses of controls that offer specific functionality. More on that [later](#control-classes).
 
 Although MIDI controllers come in all shapes and sizes, zcx is focused on controllers with a 'matrix' or grid of pads or buttons, such as the Ableton Push, Novation Launchpad, Akai APC, and  others like them. Because of this, zcx makes a distinction between controls that form the matrix, and those that don't.
 
@@ -226,4 +226,4 @@ One class of control is the `page control`,  which is bound to a page you specif
 
 ___
 
-[Back to tutorial chapter](getting_started.md)
+[Back to tutorial chapter](/docs/tutorials/getting-started.md)
