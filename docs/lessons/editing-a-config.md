@@ -155,7 +155,7 @@ Cool, lets do a little more!
 
 ## modes
 
-What if we wanted to have that `mute` button to double as a solo button? We could add a `double_clicked` gesture with the action list `SOLO`, but its a small button and that's a bit tricky. 
+What if we wanted to have that `mute` button double as a solo button? We could add a `double_clicked` gesture with the action list `SOLO`, but its a small button and that's a bit tricky. 
 
 The Push 1 has a `shift` button. We can make it so the `mute` button mutes by default, but solos when `shift` is held.
 
