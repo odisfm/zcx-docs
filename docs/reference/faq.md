@@ -25,4 +25,10 @@ See the [porting guide.](/docs/other/404.md)
 [But of course.
 ](https://discord.gg/DCtbuEe8Qr)
 
+### How can I contribute?
 
+See `#contributing` in the Discord.
+
+___
+
+[Back to index.](/docs/zcx-docs.md)
