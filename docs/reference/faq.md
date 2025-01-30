@@ -1,5 +1,9 @@
 # frequently asked questions
 
+### What's all this then?
+
+Have a look at the [Github page for zcx-core](https://github.com/odisfm/zcx-core).
+
 ### Does zcx replace ClyphX?
 
 Nope. While technically the script will run without ClyphX, it requires ClyphX running to do anything useful, i.e. trigger actions.
