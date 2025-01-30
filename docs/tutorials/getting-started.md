@@ -1,6 +1,9 @@
 
 Here's the stuff you should know before you get stuck in designing your zcx config:
 
+0. [installing zcx](/docs/lessons/installation.md)
+
+> Alternatively, 'dragging one folder into another folder'.
 
 1. [reading zcx configurations](/docs/lessons/reading-zcx-configurations.md)
 
