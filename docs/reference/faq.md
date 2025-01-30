@@ -33,6 +33,12 @@ See the [porting guide.](/docs/other/404.md)
 
 See `#contributing` in the Discord.
 
+### What does 'zcx' stand for?
+
+**Z**really<br>
+**C**ool<br>
+**X**thingo
+
 ___
 
 [Back to index.](/docs/zcx-docs.md)
