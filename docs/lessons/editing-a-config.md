@@ -293,7 +293,7 @@ gestures:
     "my cool track" / MUTE
 ```
 
-Notice how the whole action list is now one color? By writing our action list as above, we're telling yaml that the entire line is the value we want to associate with `pressed`.
+By writing our action list as above (putting a `>` after the key and writing the value on a new line), we're telling yaml that the entire line is the value we want to associate with `pressed`.
 
 # congratulations!
 
