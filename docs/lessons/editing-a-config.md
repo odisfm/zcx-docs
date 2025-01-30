@@ -30,17 +30,17 @@ _If you have a smaller matrix, the file `actions_top_left` might be called somet
 
 ```yaml
 pages:
-	main:
-		- big_colors
-	test_page:
-		- actions_top_left
-		- actions_bottom_right
-		- actions_bottom_left
-		- actions_top_right
-	track_page:
-		- actions_top_left
-		- mega_launcher
-		- track_half
+  main:
+    - big_colors
+  test_page:
+    - actions_top_left
+    - actions_bottom_right
+    - actions_bottom_left
+    - actions_top_right
+  track_page:
+    - actions_top_left
+    - mega_launcher
+    - track_half
 ```
 
 Your `pages.yaml` probably looks something like this. The page `main` contains the section `big_colors`, which is the pretty gradient that appears when you load zcx. The section we'll be working on is `actions_top_left`, which appears on `test_page` and `track_page`.
@@ -53,26 +53,26 @@ Feel free to change the order of pages:
 
 ```yaml
 pages:
-	test_page:
-		- actions_top_left
-		- actions_bottom_right
-		- actions_bottom_left
-		- actions_top_right
-	main:
-		- big_colors
-	track_page:
-		- actions_top_left
-		- mega_launcher
-		- track_half
+  test_page:
+    - actions_top_left
+    - actions_bottom_right
+    - actions_bottom_left
+    - actions_top_right
+  main:
+    - big_colors
+  track_page:
+    - actions_top_left
+    - mega_launcher
+    - track_half
 ```
 
 You also have the option to add an `order` key to your `pages.yaml` like so:
 
 ```yaml
 order:
-	- test_page
-	- track_page
-	- main
+  - test_page
+  - track_page
+  - main
 ```
 
 The order here will take precedence.
@@ -83,24 +83,24 @@ And that's where we'll leave `pages.yaml` for this lesson.
 
 ```yaml
 mute:
-	gestures:
-		pressed: MUTE
+  gestures:
+    pressed: MUTE
 
 solo:
-	gestures:
-		pressed: SOLO
+   gestures:
+     pressed: SOLO
 
 metronome:
-	gestures:
-		pressed: METRO
+  gestures:
+     pressed: METRO
 
 new:
-	gestures:
-		pressed: ADDSCENE
+  gestures:
+    pressed: ADDSCENE
 
 duplicate:
-	gestures:
-		pressed: SCENEDUPE
+  gestures:
+    pressed: SCENEDUPE
 ```
 
 Inside `named_controls.yaml` you'll find some control definitions that look like this. There will probably be some that look quite scary, but once you get the basics down you'll be able to easily read and compose them yourself (if you want!).
@@ -109,8 +109,8 @@ Lets have a look at the definition for `mute`:
 
 ```yaml
 mute:
-	gestures:
-		pressed: MUTE
+  gestures:
+    pressed: MUTE
 ```
 
 Pretty simple. As you might have guessed, when we press the button labeled 'Mute' on the Push, zcx fires the ClyphX action `MUTE`, which mutes the currently selected track.
@@ -119,9 +119,9 @@ We can add more functionality to this button: what if when we held it down brief
 
 ```yaml
 mute:
-	gestures:
-		pressed: MUTE
-		pressed_delayed: ALL / MUTE
+  gestures:
+    pressed: MUTE
+    pressed_delayed: ALL / MUTE
 ```
 
 Make that edit, then [reload zcx](/docs/lessons/reloading-control-surfaces.md).
@@ -130,21 +130,21 @@ Now, when you hold down `mute`, every track in the set gets muted. Well, actuall
 
 ```yaml
 mute:
-	gestures:
-		released_immediately: MUTE
-		pressed_delayed: ALL / MUTE
+  gestures:
+    released_immediately: MUTE
+    pressed_delayed: ALL / MUTE
 ```
 
 We've changed the [key](/docs/lessons/reading-zcx-configurations.md#keys-and-values) `pressed` to `released_immediately`. zcx supports six gestures, five of which you'll be familiar with if you've used G-Controls:
 
 ```
 zcx_gestures:
-	- pressed
-	- pressed_delayed
-	- released
-	- released_immediately
-	- released_delayed
-	- double_clicked
+  - pressed
+  - pressed_delayed
+  - released
+  - released_immediately
+  - released_delayed
+  - double_clicked
 ```
 
 This change means that a quick press and release of `mute` will mute the selected track, but if you press and hold, after a moment all tracks will be muted, without the in-between step of muting the selected track.
@@ -160,10 +160,10 @@ The Push 1 has a `shift` button. We can make it so the `mute` button mutes by de
 
 ```yaml
 mute:
-	gestures:
-		released_immediately: MUTE
-		pressed_delayed: ALL / MUTE
-		pressed__shift: SOLO
+  gestures:
+    released_immediately: MUTE
+    pressed_delayed: ALL / MUTE
+    pressed__shift: SOLO
 ```
 
 That's all we need to do to add mode functionality to our control. By taking a default gesture and adding the suffix `__shift`, we're telling zcx to do a special action when the `shift` mode is active. Now obviously the `shift` mode is in effect while we hold the `shift` control, but how does that work? The logic for that is actually in this same file:
@@ -171,11 +171,11 @@ That's all we need to do to add mode functionality to our control. By taking a d
 
 ```yaml
 shift:
-	gestures:
-		pressed:
-			mode_on: shift
-		released:
-			mode_off: shift
+  gestures:
+     pressed:
+       mode_on: shift
+     released:
+       mode_off: shift
 ```
 
 The only other thing we need is to have `shift` listed in our `modes.yaml`:
@@ -192,12 +192,12 @@ You can have as many modes as you like. This config has a `select` mode configur
 
 ```yaml
 mute:
-	gestures:
-		released_immediately: MUTE
-		pressed_delayed: ALL / MUTE
-		pressed__shift: SOLO
-		pressed__shift__select: ALL / SOLO
-		# for when you want to listen closely to EVERY track
+  gestures:
+    released_immediately: MUTE
+    pressed_delayed: ALL / MUTE
+    pressed__shift: SOLO
+    pressed__shift__select: ALL / SOLO
+    # for when you want to listen closely to EVERY track
 ```
 
 
@@ -249,14 +249,14 @@ The data structure you're looking at is called a [list](/docs/lessons/reading-zc
 # row 1
 # col 1
 -
-	color: green
-	gestures:
-		pressed:
+    color: green
+    gestures:
+      pressed:
 # col 2
 -
-	color: grey
-	gestures:
-		pressed:
+    color: grey
+    gestures:
+      pressed:
 ```
 
 If you like, you can start each list item with an empty line. You may find this easier to read.
@@ -281,15 +281,15 @@ The [strings](/docs/lessons/reading-zcx-configurations.md#strings) we've used so
 
 ```yaml
 gestures:
-	pressed: "my cool track" / MUTE
+  pressed: "my cool track" / MUTE
 ```
 
 Because quotes have special significance in programming languages, this definition isn't valid yaml: it expects `my cool track` to be a complete string (without the quotes), and then freaks out a bit when it encounters `/ MUTE`. But we can easily work around that:
 
 ```yaml
 gestures:
-	pressed: >
-		"my cool track" / MUTE
+  pressed: >
+    "my cool track" / MUTE
 ```
 
 Notice how the whole action list is now one color? By writing our action list as above, we're telling yaml that the entire line is the value we want to associate with `pressed`.

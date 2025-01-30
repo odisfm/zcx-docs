@@ -13,9 +13,9 @@ These controls exist outside of the matrix. That means they perform the same fun
 
 ```yaml
 record:
-	color: red
-	gestures:
-		pressed: SRECFIX 8
+  color: red
+  gestures:
+    pressed: SRECFIX 8
 ```
 
 **Note:** while named controls are unaffected by page changes, they _are_ affected by [modes](#modes).
@@ -104,11 +104,11 @@ And in each of those files you define every pad that belongs to that section:
 # col 1
 - color: red
   gestures:
-	pressed: METRO
+    pressed: METRO
 # col 2
 - color: blue
   gestures:
-	pressed: SETPLAY
+    pressed: SETPLAY
 ```
 
 Or you can have one definition that applies to all pads based on their position within the section:
@@ -117,11 +117,11 @@ Or you can have one definition that applies to all pads based on their position 
 # scene_section.yaml
 
 color:
-	palette: rainbow
+  palette: rainbow
 gestures:
-	pressed: SCENE ${me.Index} 
-	# `SCENE 1` for pad 1, `SCENE 2` for pad 2...
-	pressed__select: SCENE SEL ${me.Index}
+  pressed: SCENE ${me.Index} 
+  # `SCENE 1` for pad 1, `SCENE 2` for pad 2...
+  pressed__select: SCENE SEL ${me.Index}
 ```
 
 # pages
@@ -164,12 +164,11 @@ teeny_tiny_section:
   row_start: 0
   row_end: 1
 
-
 # pages.yaml
 
 my_page:
-	- big_bad_section
-	- teeny_tiny_section    # not gonna fit :(
+  - big_bad_section
+  - teeny_tiny_section    # not gonna fit :(
 ```
 
 If you try to pull this type of move, zcx will yell at you and refuse to run.
@@ -185,16 +184,16 @@ Any control can be assigned as a modifier or 'mode' control.
 
 ```yaml
 shift:
-	gestures:
-		pressed:
-			mode_on: shift
-		released:
-			mode_off: shift
+  gestures:
+    pressed:
+      mode_on: shift
+    released:
+      mode_off: shift
 
 record:
-	gestures:
-		pressed: SRECFIX 8
-		pressed__shift: SRECFIX 16
+  gestures:
+    pressed: SRECFIX 8
+    pressed__shift: SRECFIX 16
 ```
 
 A mode is just a keyword we can activate, and when activated we can enable different functionality on our controls like you see above.
@@ -203,8 +202,8 @@ You can even require multiple modes for particular functionality:
 
 ```yaml
 record:
-	gestures:
-		presssed__shift__select: SRECFIX 64
+  gestures:
+    presssed__shift__select: SRECFIX 64
 ```
 
 The names of these modes are completely arbitrary, but they must be defined in your `modes.yaml` file.
