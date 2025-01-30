@@ -19,10 +19,10 @@ Here's the same button, defined as a ZControl:
 
 ```yaml
 play:
-	color: green
-	gestures:
-		pressed: SEL / ARM
-		pressed_delayed: SRECFIX 8
+  color: green
+  gestures:
+    pressed: SEL / ARM
+    pressed_delayed: SRECFIX 8
 ```
 
 At the same time, the above definition may look more complex, yet easier to read. Notice that your web browser is color coding certain words. This is because zcx makes heavy use of an existing format called [YAML](https://en.wikipedia.org/wiki/YAML)
@@ -75,9 +75,9 @@ Literally just a list of values. Those values could be numbers, strings, both, o
 ### # comments
 ```yaml
 octave_up:
-#	repeat: True
-	gestures:
-		pressed: METRO # I can write whatever I want here
+  # repeat: True
+  gestures:
+    pressed: METRO # I can write whatever I want here
 ```
 
 When you see a  `#` on a line of yaml, anything to the right of that `#` will be totally ignored. If you put a `#` before the key, like with `# repeat` above, this line essentially 'disappears' from your config when zcx loads it. So, not actually a data type, but important to know.
@@ -88,10 +88,10 @@ We can also 'nest' yaml **objects** inside each other:
 
 ```yaml
 color:
-	pulse:
-		a: red
-		b: purple
-		speed: 1
+  pulse:
+    a: red
+    b: purple
+    speed: 1
 ```
 
 And what is an **object**? Just another set of key-value pairs. 😎
