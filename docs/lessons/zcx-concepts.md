@@ -64,11 +64,11 @@ A matrix section is a logical segment of the matrix, defined by row and column. 
 #          0 1 2 3 4 5 6 7  
 #
 
-actions_top_left:  
-  col_start: 0  
-  col_end: 3  
-  row_start: 0  
-  row_end: 3  
+actions_top_left:   #   0 1 2 3
+  col_start: 0      # 0 □ □ □ □
+  col_end: 3        # 1 □ □ □ □
+  row_start: 0      # 2 □ □ □ □
+  row_end: 3        # 3 □ □ □ □
   
 actions_top_right:  
   col_start: 4  
