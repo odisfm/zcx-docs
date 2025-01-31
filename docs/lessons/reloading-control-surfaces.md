@@ -8,7 +8,7 @@ Sucks to do, obviously. This should only be necessary if you are tinkering with 
 
 ## reload the set 😒
 
-cmd + S, then in the menu bar `File -> Open Recent Set -> <my cool set.als>`. Much better than reloading Live, but still sucks with heavier sets.
+cmd + S, then in the menu bar `File -> Open Recent Set -> <my cool set>.als`. Much better than reloading Live, but still sucks with heavier sets.
 
 ## manually reload zcx 😏
 
