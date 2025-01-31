@@ -4,6 +4,13 @@
 
 Have a look at the [Github page for zcx-core](https://github.com/odisfm/zcx-core).
 
+### What do I need to use zcx?
+
+* Ableton Live 12.1 or above <sup>[why?](/docs/lessons/why-live-12.md)</sup>
+* ClyphX Pro
+* [Supported hardware](/docs/lessons/installation.md#get-a-distribution)
+* A heart full of dreams
+
 ### Does zcx replace ClyphX?
 
 Nope. While technically the script will run without ClyphX, it requires ClyphX running to do anything useful, i.e. trigger actions.
