@@ -2,7 +2,7 @@
 
 ### What's all this then?
 
-Have a look at the [Github page for zcx-core](https://github.com/odisfm/zcx-core).
+Have a look at the [Github page for zcx-core](https://github.com/odisfm/zcx-core#zcx-core).
 
 ### What do I need to use zcx?
 
