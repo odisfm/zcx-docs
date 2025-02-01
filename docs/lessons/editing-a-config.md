@@ -387,7 +387,7 @@ All 8 encoders have the same* binding when in the `default`, `shift`, and `devic
 ### rapidly prototype configs
 The default binding is `${me.Index} / VOL`. `${me.Index}` will be unfamiliar syntax. When you see `${<some.value>}` you are looking at a zcx template string. 
 
-Everywhere we use this syntax, behind the scenes zcx will resolve these template values. For `enc_1`, the final binding target will be `1 / VOL`, or the first track in the set. `enc_2` will resolve to `2 / VOL` and so on.
+Everywhere we use this syntax, behind the scenes zcx will resolve these template values. For `enc_1`, the final binding target will be `1 / VOL`, or the first track in the set. `enc_2` will resolve to `2 / VOL` and so on. Note: this is according to each control's position in the `encoders` key.
 ```
 me: the control
 Index: fancy word for position
