@@ -11,6 +11,10 @@ Have a look at the [Github page for zcx-core](https://github.com/odisfm/zcx-core
 * [Supported hardware](/docs/lessons/installation.md#get-a-distribution)
 * A heart full of dreams
 
+### What hardware is zcx available for?
+
+[See here.](/docs/lessons/installation.md#get-a-distribution)
+
 ### Does zcx replace ClyphX?
 
 Nope. While technically the script will run without ClyphX, it requires ClyphX running to do anything useful, i.e. trigger actions.
@@ -19,9 +23,7 @@ Nope. While technically the script will run without ClyphX, it requires ClyphX r
 
 That's up to you. zcx can be used to create a far more complex interface than is possible with native ClyphX. However, that power comes with a learning curve. Only you can decide whether this tradeoff is worth it.
 
-### What hardware is zcx available for?
-
-[See here.](/docs/lessons/installation.md#get-a-distribution)
+**Note:** You can absolutely use X/G Controls alongside a zcx script. It is recommended that you use zcx for any matrix controllers, and native ClyphX controls for non-matrix controllers.
 
 ### Can I use zcx with a non-matrix controller?
 
