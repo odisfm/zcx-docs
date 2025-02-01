@@ -216,6 +216,25 @@ The names of these modes are completely arbitrary, but they must be defined in y
 - drums
 ```
 
+# ZEncoders
+
+ZEncoders allow you to dynamically map encoders (knobs, faders, etc.) to parameters in Live. [With some exceptions](https://github.com/odisfm/zcx-core/releases/tag/v0.2.0-alpha.1), targeting of parameters with ZEncoders follows the same syntax as ClyphX encoder bindings:
+
+```yaml
+# encoders.yaml
+
+tempo:
+  binding: SEL / VOL
+```
+
+ZEncoders are also mode-aware:
+```yaml
+tempo:
+  binding:
+    default: SEL / VOL
+    __shift: SEL / PAN
+```
+
 
 # control classes
 
